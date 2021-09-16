@@ -16,12 +16,20 @@ export default class MainControl {
 
     this.userData = {
       userName: name,
-      userAgeYears: 0
+      userAgeYears: 0,
+      userAgeDays: 0
     }
 
     this.planetYears = 0
 
   };
+
+  ageToDays() {
+    let number1 = this.userAgeYears
+    let number2 = this.earth
+    let convert = number1 * number2
+    this.userAgeDays = convert
+  }
 
 };
 
