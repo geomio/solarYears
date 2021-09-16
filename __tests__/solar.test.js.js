@@ -1,9 +1,10 @@
-import SolarSystem from "../src/solar";
+import MainControl from "../src/solar";
 
-describe('SolarSystem', () => {
+describe('MainControl', () => {
 
-  test('Solar System should create a object that holds planet objects', () => {
-    const system = new SolarSystem();
-    expect(system).toEqual(3);
+  test('MainControl should create a object that holds planet objects and user year age', () => {
+    const system = new MainControl();
+    const userData = new UserData('tim', 25);
+    expect(system.userData.age).toEqual(25);
   });
 });

@@ -1,5 +1,6 @@
-export default class SolarSystem {
+export default class MainControl {
   constructor() {
 
-  }
+  };
+
 };
