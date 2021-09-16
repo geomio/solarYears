@@ -16,8 +16,10 @@ export default class MainControl {
 
     this.userData = {
       userName: name,
-      userAge: 0
+      userAgeYears: 0
     }
+
+    this.planetYears = 0
 
   };
 
