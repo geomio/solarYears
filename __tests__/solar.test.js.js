@@ -9,6 +9,7 @@ describe('MainControl', () => {
     console.log(system.userData.userName);
     expect(system.userData.userName).toEqual('jim');
     expect(system.userData.userAge).toEqual(25);
-    expect(system.solarSystem.mercury).toEqual(87.965);
+    console.log(system.solarSystem.mercury);
+    expect(system.mercury).toEqual(87.965);
   });
 });

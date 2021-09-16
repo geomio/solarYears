@@ -1,25 +1,23 @@
 export default class MainControl {
-  constructor() {
+  constructor(name) {
     this.solarSystem = {
-      constructor() {
-        this.mercury = 87.965
-        this.venus = 224.475
-        this.earth = 365
-        this.mars = 686.565
-        this.jupiter = 4328.9
-        this.saturn = 10752.9
-        this.uranus = 30663.65
-        this.neptune = 60152
-        this.pluto = 90736
-        this.eris = 203670
-      }
-    };
+      mercury = 87.965,
+      venus = 224.475,
+      earth = 365,
+      mars = 686.565,
+      jupiter = 4328.9,
+      saturn = 10752.9,
+      uranus = 30663.65,
+      neptune = 60152,
+      pluto = 90736,
+      eris = 203670,
+    }
     this.userData = {
-      constructor(name) {
-        this.userName = name
-        this.userAge = 25
-      }
-    };
+      userName = name,
+      userAge = 0,
+    }
   };
 
 };
+
+
