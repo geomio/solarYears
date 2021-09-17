@@ -37,4 +37,12 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual(103.734);
   });
 
+  test('venusDivide will divide userAgeDays to store the result in planetYears', () => {
+    const system = new MainControl();
+    system.userData.userAgeYears = 25;
+    system.ageToDays();
+    system.venusDivide();
+    expect(system.planetYears).toEqual(40.650);
+  });
+
 });
