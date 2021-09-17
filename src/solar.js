@@ -47,6 +47,14 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
+  earthDivide() {
+    let number1 = this.userData.userAgeDays
+    let number2 = this.solarSystem.earth
+    let divide = number1 / number2
+    let decimal = Math.round(divide * 1e3) / 1e3;
+    this.planetYears = decimal
+  }
+
 };
 
 
