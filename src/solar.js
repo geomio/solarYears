@@ -39,6 +39,14 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
+  venusDivide() {
+    let number1 = this.userData.userAgeDays
+    let number2 = this.solarSystem.venus
+    let divide = number1 / number2
+    let decimal = Math.round(divide * 1e3) / 1e3;
+    this.planetYears = decimal
+  }
+
 };
 
 
