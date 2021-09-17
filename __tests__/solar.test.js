@@ -98,7 +98,7 @@ describe('MainControl', () => {
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.plutoDivide();
-    expect(system.planetYears).toEqual("");
+    expect(system.planetYears).toEqual("0.1006");
   });
 
 });
