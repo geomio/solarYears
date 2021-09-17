@@ -26,7 +26,7 @@ describe('MainControl', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
-    expect(system.userAgeDays).toEqual(9125);
+    expect(system.userData.userAgeDays).toEqual(9125);
   });
 
 });
