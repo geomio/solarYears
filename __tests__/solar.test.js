@@ -34,7 +34,7 @@ describe('MainControl', () => {
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.mercuryDivide();
-    expect(system.planetYears).toEqual(103.734439834);
+    expect(system.planetYears).toEqual(103.734);
   });
 
 });

@@ -31,6 +31,14 @@ export default class MainControl {
     this.userData.userAgeDays = convert
   }
 
+  mercuryDivide() {
+    let number1 = this.userData.userAgeDays
+    let number2 = this.solarSystem.mercury
+    let divide = number1 / number2
+    let decimal = Math.round(divide * 1e3) / 1e3;
+    this.planetYears = decimal
+  }
+
 };
 
 
