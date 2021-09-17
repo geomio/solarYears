@@ -34,7 +34,7 @@ describe('MainControl', () => {
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.mercuryDivide();
-    expect(system.planetYears).toEqual(103.734);
+    expect(system.planetYears).toEqual("103.7344");
   });
 
   test('venusDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -42,7 +42,7 @@ describe('MainControl', () => {
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.venusDivide();
-    expect(system.planetYears).toEqual(40.650);
+    expect(system.planetYears).toEqual("40.6504");
   });
 
   test('earthDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -50,7 +50,7 @@ describe('MainControl', () => {
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.earthDivide();
-    expect(system.planetYears).toEqual(25);
+    expect(system.planetYears).toEqual("25.0000");
   });
 
   test('marsDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -58,7 +58,7 @@ describe('MainControl', () => {
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.marsDivide();
-    expect(system.planetYears).toEqual(13.29);
+    expect(system.planetYears).toEqual("13.2908");
   });
 
   test('jupiterDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -66,7 +66,7 @@ describe('MainControl', () => {
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.jupiterDivide();
-    expect(system.planetYears).toEqual(2.107);
+    expect(system.planetYears).toEqual("2.1079");
   });
 
 });

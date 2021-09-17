@@ -35,7 +35,7 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.mercury
     let divide = number1 / number2
-    let decimal = Math.round(divide * 1e3) / 1e3;
+    let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
 
@@ -43,7 +43,7 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.venus
     let divide = number1 / number2
-    let decimal = Math.round(divide * 1e3) / 1e3;
+    let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
 
@@ -51,7 +51,7 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.earth
     let divide = number1 / number2
-    let decimal = Math.round(divide * 1e3) / 1e3;
+    let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
 
@@ -59,7 +59,15 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.mars
     let divide = number1 / number2
-    let decimal = Math.round(divide * 1e2) / 1e2;
+    let decimal = divide.toFixed(4)
+    this.planetYears = decimal
+  }
+
+  jupiterDivide() {
+    let number1 = this.userData.userAgeDays
+    let number2 = this.solarSystem.jupiter
+    let divide = number1 / number2
+    let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
 
