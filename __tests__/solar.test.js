@@ -85,4 +85,12 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("0.2976");
   });
 
+  test('neptuneDivide will divide userAgeDays to store the result in planetYears', () => {
+    const system = new MainControl();
+    system.userData.userAgeYears = 25;
+    system.ageToDays();
+    system.neptuneDivide();
+    expect(system.planetYears).toEqual("0");
+  });
+
 });
