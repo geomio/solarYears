@@ -101,4 +101,12 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("0.1006");
   });
 
+  test('erisDivide will divide userAgeDays to store the result in planetYears', () => {
+    const system = new MainControl();
+    system.userData.userAgeYears = 25;
+    system.ageToDays();
+    system.erisDivide();
+    expect(system.planetYears).toEqual("");
+  });
+
 });
