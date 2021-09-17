@@ -82,7 +82,7 @@ describe('MainControl', () => {
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.uranusDivide();
-    expect(system.planetYears).toEqual("0.8486");
+    expect(system.planetYears).toEqual("0.2976");
   });
 
 });
