@@ -87,6 +87,14 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
+  neptuneDivide() {
+    let number1 = this.userData.userAgeDays
+    let number2 = this.solarSystem.neptune
+    let divide = number1 / number2
+    let decimal = divide.toFixed(4)
+    this.planetYears = decimal
+  }
+
 };
 
 

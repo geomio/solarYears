@@ -90,7 +90,7 @@ describe('MainControl', () => {
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.neptuneDivide();
-    expect(system.planetYears).toEqual("0");
+    expect(system.planetYears).toEqual("0.1517");
   });
 
 });
