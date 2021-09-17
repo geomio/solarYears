@@ -55,6 +55,14 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
+  marsDivide() {
+    let number1 = this.userData.userAgeDays
+    let number2 = this.solarSystem.mars
+    let divide = number1 / number2
+    let decimal = Math.round(divide * 1e2) / 1e2;
+    this.planetYears = decimal
+  }
+
 };
 
 
