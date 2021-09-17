@@ -93,4 +93,12 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("0.1517");
   });
 
+  test('plutoDivide will divide userAgeDays to store the result in planetYears', () => {
+    const system = new MainControl();
+    system.userData.userAgeYears = 25;
+    system.ageToDays();
+    system.plutoDivide();
+    expect(system.planetYears).toEqual("");
+  });
+
 });
