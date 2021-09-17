@@ -106,7 +106,7 @@ describe('MainControl', () => {
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.erisDivide();
-    expect(system.planetYears).toEqual("");
+    expect(system.planetYears).toEqual("0.0448");
   });
 
 });

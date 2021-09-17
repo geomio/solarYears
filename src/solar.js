@@ -103,6 +103,14 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
+  erisDivide() {
+    let number1 = this.userData.userAgeDays
+    let number2 = this.solarSystem.eris
+    let divide = number1 / number2
+    let decimal = divide.toFixed(4)
+    this.planetYears = decimal
+  }
+
 
 };
 
