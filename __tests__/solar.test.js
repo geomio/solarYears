@@ -61,4 +61,12 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual(13.29);
   });
 
+  test('jupiterDivide will divide userAgeDays to store the result in planetYears', () => {
+    const system = new MainControl();
+    system.userData.userAgeYears = 25;
+    system.ageToDays();
+    system.jupiterDivide();
+    expect(system.planetYears).toEqual(2.107);
+  });
+
 });
