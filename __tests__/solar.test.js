@@ -109,4 +109,31 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("0.0448");
   });
 
+  test('runSelected will run selected divide function', () => {
+    const system = new MainControl();
+    system.userData.userAgeYears = 25;
+    system.ageToDays();
+    system.runSelected();
+    system.selector = 4;
+    expect(system.userData.marsYears).toEqual("13.2908");
+  });
+
+  // test('doAll should count all planets and add their value', () => {
+  //   const system = new MainControl();
+  //   system.userData.userAgeYears = 25;
+  //   system.ageToDays();
+  //   system.doAll();
+  //   system.
+  //   expect(system.userMarsAge).toEqual("0.0448");
+  // });
+
+  // test('lifeSpan should find remaining life span per planet', () => {
+  //   const system = new MainControl();
+  //   system.userData.userAgeYears = 25;
+  //   system.ageToDays();
+  //   system.erisDivide();
+  //   system.lifeSpan();
+  //   expect(system.erisExpected).toEqual("55");
+  // });
+
 });

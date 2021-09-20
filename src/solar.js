@@ -22,6 +22,8 @@ export default class MainControl {
 
     this.planetYears = 0
 
+    this.selector = 0
+
   };
 
   ageToDays() {
