@@ -54,6 +54,7 @@ describe('MainControl', () => {
     system.earthDivide();
     expect(system.planetYears).toEqual("25.0000");
     expect(system.userData.earthLifeExpect).toEqual("65.0000")
+
   });
 
   test('marsDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -62,6 +63,7 @@ describe('MainControl', () => {
     system.ageToDays();
     system.marsDivide();
     expect(system.planetYears).toEqual("13.2908");
+    expect(system.userData.marsLifeExpect).toEqual("1")
   });
 
   test('jupiterDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -70,6 +72,7 @@ describe('MainControl', () => {
     system.ageToDays();
     system.jupiterDivide();
     expect(system.planetYears).toEqual("2.1079");
+    expect(system.userData.jupiterLifeExpect).toEqual("1")
   });
 
   test('saturnDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -78,6 +81,7 @@ describe('MainControl', () => {
     system.ageToDays();
     system.saturnDivide();
     expect(system.planetYears).toEqual("0.8486");
+    expect(system.userData.saturnLifeExpect).toEqual("1")
   });
 
   test('uranusDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -86,6 +90,7 @@ describe('MainControl', () => {
     system.ageToDays();
     system.uranusDivide();
     expect(system.planetYears).toEqual("0.2976");
+    expect(system.userData.uranusLifeExpect).toEqual("1")
   });
 
   test('neptuneDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -94,6 +99,7 @@ describe('MainControl', () => {
     system.ageToDays();
     system.neptuneDivide();
     expect(system.planetYears).toEqual("0.1517");
+    expect(system.userData.neptuneLifeExpect).toEqual("1")
   });
 
   test('plutoDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -102,6 +108,7 @@ describe('MainControl', () => {
     system.ageToDays();
     system.plutoDivide();
     expect(system.planetYears).toEqual("0.1006");
+    expect(system.userData.plutoLifeExpect).toEqual("1")
   });
 
   test('erisDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -110,6 +117,7 @@ describe('MainControl', () => {
     system.ageToDays();
     system.erisDivide();
     expect(system.planetYears).toEqual("0.0448");
+    expect(system.userData.erisLifeExpect).toEqual("1")
   });
 
   test('runSelected will run selected divide function and run all at once', () => {
