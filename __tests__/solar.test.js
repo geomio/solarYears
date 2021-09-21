@@ -35,6 +35,7 @@ describe('MainControl', () => {
     system.ageToDays();
     system.mercuryDivide();
     expect(system.planetYears).toEqual("103.7344");
+    expect(system.userData.mercuryLifeExpect).toEqual("264.5939")
   });
 
   test('venusDivide will divide userAgeDays to store the result in planetYears', () => {
@@ -109,7 +110,7 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("0.0448");
   });
 
-  test('runSelected will run selected divide function', () => {
+  test('runSelected will run selected divide function and run all at once', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
@@ -133,6 +134,17 @@ describe('MainControl', () => {
     system.selector = 9;
     expect(system.userData.plutoYears).toEqual("0.1006");
     system.selector = 10;
+    expect(system.userData.erisYears).toEqual("0.0448");
+    system.selector = 11;
+    expect(system.userData.mercuryYears).toEqual("103.7344");
+    expect(system.userData.venusYears).toEqual("40.6504");
+    expect(system.userData.earthYears).toEqual("25.0000");
+    expect(system.userData.marsYears).toEqual("13.2908");
+    expect(system.userData.jupiterYears).toEqual("2.1079");
+    expect(system.userData.saturnYears).toEqual("0.8486");
+    expect(system.userData.uranusYears).toEqual("0.2976");
+    expect(system.userData.neptuneYears).toEqual("0.1517");
+    expect(system.userData.plutoYears).toEqual("0.1006");
     expect(system.userData.erisYears).toEqual("0.0448");
   });
 

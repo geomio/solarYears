@@ -21,19 +21,30 @@ export default class MainControl {
       userAgeYears: 0,
       userAgeDays: 0,
       mercuryYears: 0,
+      mercuryLifeExpect: 0,
       venusYears: 0,
+      venusLifeExpect: 0,
       earthYears: 0,
+      earthLifeExpect: 0,
       jupiterYears: 0,
+      jupiterLifeExpect: 0,
       saturnYears: 0,
+      saturnLifeExpect: 0,
       uranusYears: 0,
+      uranusLifeExpect: 0,
       neptuneYears: 0,
+      neptuneLifeExpect: 0,
       plutoYears: 0,
-      erisYears: 0
+      plutoLifeExpect: 0,
+      erisYears: 0,
+      erisLifeExpect: 0
     }
 
     this.planetYears = 0
 
     this.selector = 0
+
+    this.averageLife = 90
 
   };
 
@@ -48,6 +59,8 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.mercury
     let divide = number1 / number2
+    let lifeSubtract = this.averageLife - divide
+    this.userData.mercuryLifeExpect = lifeSubtract.toFixed(4)
     let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
@@ -153,6 +166,27 @@ export default class MainControl {
       this.plutoDivide()
       this.userData.plutoYears = this.planetYears
     } if (this.selector = 10) {
+      this.erisDivide()
+      this.userData.erisYears = this.planetYears
+    } if (this.selector = 11) {
+      this.mercuryDivide()
+      this.userData.mercuryYears = this.planetYears
+      this.venusDivide()
+      this.userData.venusYears = this.planetYears
+      this.earthDivide()
+      this.userData.earthYears = this.planetYears
+      this.marsDivide()
+      this.userData.marsYears = this.planetYears
+      this.jupiterDivide()
+      this.userData.jupiterYears = this.planetYears
+      this.saturnDivide()
+      this.userData.saturnYears = this.planetYears
+      this.uranusDivide()
+      this.userData.uranusYears = this.planetYears
+      this.neptuneDivide()
+      this.userData.neptuneYears = this.planetYears
+      this.plutoDivide()
+      this.userData.plutoYears = this.planetYears
       this.erisDivide()
       this.userData.erisYears = this.planetYears
     }
