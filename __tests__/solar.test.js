@@ -127,34 +127,62 @@ describe('MainControl', () => {
     system.runSelected();
     system.selector = 1;
     expect(system.userData.mercuryYears).toEqual("103.7344");
+    expect(system.userData.mercuryLifeExpect).toEqual("269.7095")
     system.selector = 2;
     expect(system.userData.venusYears).toEqual("40.6504");
+    expect(system.userData.venusLifeExpect).toEqual("105.6911")
     system.selector = 3;
     expect(system.userData.earthYears).toEqual("25.0000");
+    expect(system.userData.earthLifeExpect).toEqual("65.0000")
     system.selector = 4;
     expect(system.userData.marsYears).toEqual("13.2908");
+    expect(system.userData.marsLifeExpect).toEqual("34.5561")
     system.selector = 5;
     expect(system.userData.jupiterYears).toEqual("2.1079");
+    expect(system.userData.jupiterLifeExpect).toEqual("5.4806")
     system.selector = 6;
     expect(system.userData.saturnYears).toEqual("0.8486");
+    expect(system.userData.saturnLifeExpect).toEqual("2.2064")
     system.selector = 7;
     expect(system.userData.uranusYears).toEqual("0.2976");
+    expect(system.userData.uranusLifeExpect).toEqual("0.7737")
     system.selector = 8;
     expect(system.userData.neptuneYears).toEqual("0.1517");
+    expect(system.userData.neptuneLifeExpect).toEqual("0.3944")
     system.selector = 9;
     expect(system.userData.plutoYears).toEqual("0.1006");
+    expect(system.userData.plutoLifeExpect).toEqual("0.2615")
     system.selector = 10;
     expect(system.userData.erisYears).toEqual("0.0448");
+    expect(system.userData.erisLifeExpect).toEqual("0.1165")
+  });
+
+  test('runSelected can run all divide functions at once', () => {
+    const system = new MainControl();
+    system.userData.userAgeYears = 25;
+    system.ageToDays();
+    system.runSelected();
+
     system.selector = 11;
     expect(system.userData.mercuryYears).toEqual("103.7344");
+    expect(system.userData.mercuryLifeExpect).toEqual("269.7095")
     expect(system.userData.venusYears).toEqual("40.6504");
+    expect(system.userData.venusLifeExpect).toEqual("105.6911")
     expect(system.userData.earthYears).toEqual("25.0000");
+    expect(system.userData.earthLifeExpect).toEqual("65.0000")
     expect(system.userData.marsYears).toEqual("13.2908");
+    expect(system.userData.marsLifeExpect).toEqual("34.5561")
     expect(system.userData.jupiterYears).toEqual("2.1079");
+    expect(system.userData.jupiterLifeExpect).toEqual("5.4806")
     expect(system.userData.saturnYears).toEqual("0.8486");
+    expect(system.userData.saturnLifeExpect).toEqual("2.2064")
     expect(system.userData.uranusYears).toEqual("0.2976");
+    expect(system.userData.uranusLifeExpect).toEqual("0.7737")
     expect(system.userData.neptuneYears).toEqual("0.1517");
+    expect(system.userData.neptuneLifeExpect).toEqual("0.3944")
     expect(system.userData.plutoYears).toEqual("0.1006");
+    expect(system.userData.plutoLifeExpect).toEqual("0.2615")
     expect(system.userData.erisYears).toEqual("0.0448");
+    expect(system.userData.erisLifeExpect).toEqual("0.1165")
   });
 });
