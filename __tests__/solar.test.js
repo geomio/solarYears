@@ -29,13 +29,13 @@ describe('MainControl', () => {
     expect(system.userData.userAgeDays).toEqual(9125);
   });
 
-  test('mercuryDivide will divide userAgeDays to store the result in planetYears', () => {
+  test('mercuryDivide will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for mercury', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.mercuryDivide();
     expect(system.planetYears).toEqual("103.7344");
-    expect(system.userData.mercuryLifeExpect).toEqual("264.5939")
+    expect(system.userData.mercuryLifeExpect).toEqual(264.5939")
   });
 
   test('venusDivide will divide userAgeDays to store the result in planetYears', () => {
