@@ -59,7 +59,9 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.mercury
     let divide = number1 / number2
-    let lifeSubtract = this.averageLife - divide
+    let lifeDayMultiplier = this.averageLife * this.solarSystem.earth
+    let planetLifeExpectancy = lifeDayMultiplier / this.solarSystem.mercury
+    let lifeSubtract = planetLifeExpectancy - divide
     this.userData.mercuryLifeExpect = lifeSubtract.toFixed(4)
     let decimal = divide.toFixed(4)
     this.planetYears = decimal

@@ -35,7 +35,7 @@ describe('MainControl', () => {
     system.ageToDays();
     system.mercuryDivide();
     expect(system.planetYears).toEqual("103.7344");
-    expect(system.userData.mercuryLifeExpect).toEqual(264.5939")
+    expect(system.userData.mercuryLifeExpect).toEqual("269.7095")
   });
 
   test('venusDivide will divide userAgeDays to store the result in planetYears', () => {
