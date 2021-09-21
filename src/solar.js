@@ -1,3 +1,5 @@
+import { ifStatement } from "@babel/types"
+
 export default class MainControl {
   constructor(name) {
 
@@ -17,7 +19,16 @@ export default class MainControl {
     this.userData = {
       userName: name,
       userAgeYears: 0,
-      userAgeDays: 0
+      userAgeDays: 0,
+      mercuryYears: 0,
+      venusYears: 0,
+      earthYears: 0,
+      jupiterYears: 0,
+      saturnYears: 0,
+      uranusYears: 0,
+      neptuneYears: 0,
+      plutoYears: 0,
+      erisYears: 0
     }
 
     this.planetYears = 0
@@ -111,6 +122,40 @@ export default class MainControl {
     let divide = number1 / number2
     let decimal = divide.toFixed(4)
     this.planetYears = decimal
+  }
+
+  runSelected() {
+    if (this.selector = 1) {
+      this.mercuryDivide()
+      this.userData.mercuryYears = this.planetYears
+    } if (this.selector = 2) {
+      this.venusDivide()
+      this.userData.venusYears = this.planetYears
+    } if (this.selector = 3) {
+      this.earthDivide()
+      this.userData.earthYears = this.planetYears
+    } if (this.selector = 4) {
+      this.marsDivide()
+      this.userData.marsYears = this.planetYears
+    } if (this.selector = 5) {
+      this.jupiterDivide()
+      this.userData.jupiterYears = this.planetYears
+    } if (this.selector = 6) {
+      this.saturnDivide()
+      this.userData.saturnYears = this.planetYears
+    } if (this.selector = 7) {
+      this.uranusDivide()
+      this.userData.uranusYears = this.planetYears
+    } if (this.selector = 8) {
+      this.neptuneDivide()
+      this.userData.neptuneYears = this.planetYears
+    } if (this.selector = 9) {
+      this.plutoDivide()
+      this.userData.plutoYears = this.planetYears
+    } if (this.selector = 10) {
+      this.erisDivide()
+      this.userData.erisYears = this.planetYears
+    }
   }
 
 
