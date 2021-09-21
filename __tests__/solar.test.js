@@ -114,8 +114,26 @@ describe('MainControl', () => {
     system.userData.userAgeYears = 25;
     system.ageToDays();
     system.runSelected();
+    system.selector = 1;
+    expect(system.userData.mercuryYears).toEqual("103.7344");
+    system.selector = 2;
+    expect(system.userData.venusYears).toEqual("40.6504");
+    system.selector = 3;
+    expect(system.userData.earthYears).toEqual("25.0000");
     system.selector = 4;
     expect(system.userData.marsYears).toEqual("13.2908");
+    system.selector = 5;
+    expect(system.userData.jupiterYears).toEqual("2.1079");
+    system.selector = 6;
+    expect(system.userData.saturnYears).toEqual("0.8486");
+    system.selector = 7;
+    expect(system.userData.uranusYears).toEqual("0.2976");
+    system.selector = 8;
+    expect(system.userData.neptuneYears).toEqual("0.1517");
+    system.selector = 9;
+    expect(system.userData.plutoYears).toEqual("0.1006");
+    system.selector = 10;
+    expect(system.userData.erisYears).toEqual("0.0448");
   });
 
   // test('doAll should count all planets and add their value', () => {
