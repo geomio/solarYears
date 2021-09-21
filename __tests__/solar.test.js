@@ -53,6 +53,7 @@ describe('MainControl', () => {
     system.ageToDays();
     system.earthDivide();
     expect(system.planetYears).toEqual("25.0000");
+    expect(system.userData.earthLifeExpect).toEqual("65.0000")
   });
 
   test('marsDivide will divide userAgeDays to store the result in planetYears', () => {
