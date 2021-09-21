@@ -1,4 +1,4 @@
-import MainControl from "../src/solar";
+import MainControl from "../src/maincontrol";
 
 describe('MainControl', () => {
 
@@ -33,94 +33,94 @@ describe('MainControl', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
-    system.mercuryDivide();
+    system.mercuryMath();
     expect(system.planetYears).toEqual("103.7344");
     expect(system.userData.mercuryLifeExpect).toEqual("269.7095")
   });
 
-  test('venusDivide will divide userAgeDays to store the result in planetYears', () => {
+  test('venusMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for venus', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
-    system.venusDivide();
+    system.venusMath();
     expect(system.planetYears).toEqual("40.6504");
     expect(system.userData.venusLifeExpect).toEqual("105.6911")
   });
 
-  test('earthDivide will divide userAgeDays to store the result in planetYears', () => {
+  test('earthMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for earth', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
-    system.earthDivide();
+    system.earthMath();
     expect(system.planetYears).toEqual("25.0000");
     expect(system.userData.earthLifeExpect).toEqual("65.0000")
 
   });
 
-  test('marsDivide will divide userAgeDays to store the result in planetYears', () => {
+  test('marsMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for mars', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
-    system.marsDivide();
+    system.marsMath();
     expect(system.planetYears).toEqual("13.2908");
     expect(system.userData.marsLifeExpect).toEqual("34.5561")
   });
 
-  test('jupiterDivide will divide userAgeDays to store the result in planetYears', () => {
+  test('jupiterMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for jupiter', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
-    system.jupiterDivide();
+    system.jupiterMath();
     expect(system.planetYears).toEqual("2.1079");
     expect(system.userData.jupiterLifeExpect).toEqual("5.4806")
   });
 
-  test('saturnDivide will divide userAgeDays to store the result in planetYears', () => {
+  test('saturnMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for saturn', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
-    system.saturnDivide();
+    system.saturnMath();
     expect(system.planetYears).toEqual("0.8486");
     expect(system.userData.saturnLifeExpect).toEqual("2.2064")
   });
 
-  test('uranusDivide will divide userAgeDays to store the result in planetYears', () => {
+  test('uranusMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for uranus', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
-    system.uranusDivide();
+    system.uranusMath();
     expect(system.planetYears).toEqual("0.2976");
     expect(system.userData.uranusLifeExpect).toEqual("0.7737")
   });
 
-  test('neptuneDivide will divide userAgeDays to store the result in planetYears', () => {
+  test('neptuneMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for neptune', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
-    system.neptuneDivide();
+    system.neptuneMath();
     expect(system.planetYears).toEqual("0.1517");
     expect(system.userData.neptuneLifeExpect).toEqual("0.3944")
   });
 
-  test('plutoDivide will divide userAgeDays to store the result in planetYears', () => {
+  test('plutoMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for pluto', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
-    system.plutoDivide();
+    system.plutoMath();
     expect(system.planetYears).toEqual("0.1006");
     expect(system.userData.plutoLifeExpect).toEqual("0.2615")
   });
 
-  test('erisDivide will divide userAgeDays to store the result in planetYears', () => {
+  test('erisMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for eris', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
-    system.erisDivide();
+    system.erisMath();
     expect(system.planetYears).toEqual("0.0448");
     expect(system.userData.erisLifeExpect).toEqual("0.1165")
   });
 
-  test('runSelected will run selected divide function and run all at once', () => {
+  test('runSelected will run selected Math function and run all at once', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();
@@ -157,7 +157,7 @@ describe('MainControl', () => {
     expect(system.userData.erisLifeExpect).toEqual("0.1165")
   });
 
-  test('runSelected can run all divide functions at once', () => {
+  test('runSelected can run all Math functions at once', () => {
     const system = new MainControl();
     system.userData.userAgeYears = 25;
     system.ageToDays();

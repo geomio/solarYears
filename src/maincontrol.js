@@ -1,5 +1,3 @@
-import { ifStatement } from "@babel/types"
-
 export default class MainControl {
   constructor(name) {
 
@@ -55,7 +53,7 @@ export default class MainControl {
     this.userData.userAgeDays = convert
   }
 
-  mercuryDivide() {
+  mercuryMath() {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.mercury
     let divide = number1 / number2
@@ -67,7 +65,7 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
-  venusDivide() {
+  venusMath() {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.venus
     let divide = number1 / number2
@@ -79,7 +77,7 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
-  earthDivide() {
+  earthMath() {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.earth
     let divide = number1 / number2
@@ -91,7 +89,7 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
-  marsDivide() {
+  marsMath() {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.mars
     let divide = number1 / number2
@@ -103,7 +101,7 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
-  jupiterDivide() {
+  jupiterMath() {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.jupiter
     let divide = number1 / number2
@@ -115,7 +113,7 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
-  saturnDivide() {
+  saturnMath() {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.saturn
     let divide = number1 / number2
@@ -127,7 +125,7 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
-  uranusDivide() {
+  uranusMath() {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.uranus
     let divide = number1 / number2
@@ -139,7 +137,7 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
-  neptuneDivide() {
+  neptuneMath() {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.neptune
     let divide = number1 / number2
@@ -151,7 +149,7 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
-  plutoDivide() {
+  plutoMath() {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.pluto
     let divide = number1 / number2
@@ -163,7 +161,7 @@ export default class MainControl {
     this.planetYears = decimal
   }
 
-  erisDivide() {
+  erisMath() {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.eris
     let divide = number1 / number2
@@ -177,55 +175,55 @@ export default class MainControl {
 
   runSelected() {
     if (this.selector = 1) {
-      this.mercuryDivide()
+      this.mercuryMath()
       this.userData.mercuryYears = this.planetYears
     } if (this.selector = 2) {
-      this.venusDivide()
+      this.venusMath()
       this.userData.venusYears = this.planetYears
     } if (this.selector = 3) {
-      this.earthDivide()
+      this.earthMath()
       this.userData.earthYears = this.planetYears
     } if (this.selector = 4) {
-      this.marsDivide()
+      this.marsMath()
       this.userData.marsYears = this.planetYears
     } if (this.selector = 5) {
-      this.jupiterDivide()
+      this.jupiterMath()
       this.userData.jupiterYears = this.planetYears
     } if (this.selector = 6) {
-      this.saturnDivide()
+      this.saturnMath()
       this.userData.saturnYears = this.planetYears
     } if (this.selector = 7) {
-      this.uranusDivide()
+      this.uranusMath()
       this.userData.uranusYears = this.planetYears
     } if (this.selector = 8) {
-      this.neptuneDivide()
+      this.neptuneMath()
       this.userData.neptuneYears = this.planetYears
     } if (this.selector = 9) {
-      this.plutoDivide()
+      this.plutoMath()
       this.userData.plutoYears = this.planetYears
     } if (this.selector = 10) {
-      this.erisDivide()
+      this.erisMath()
       this.userData.erisYears = this.planetYears
     } if (this.selector = 11) {
-      this.mercuryDivide()
+      this.mercuryMath()
       this.userData.mercuryYears = this.planetYears
-      this.venusDivide()
+      this.venusMath()
       this.userData.venusYears = this.planetYears
-      this.earthDivide()
+      this.earthMath()
       this.userData.earthYears = this.planetYears
-      this.marsDivide()
+      this.marsMath()
       this.userData.marsYears = this.planetYears
-      this.jupiterDivide()
+      this.jupiterMath()
       this.userData.jupiterYears = this.planetYears
-      this.saturnDivide()
+      this.saturnMath()
       this.userData.saturnYears = this.planetYears
-      this.uranusDivide()
+      this.uranusMath()
       this.userData.uranusYears = this.planetYears
-      this.neptuneDivide()
+      this.neptuneMath()
       this.userData.neptuneYears = this.planetYears
-      this.plutoDivide()
+      this.plutoMath()
       this.userData.plutoYears = this.planetYears
-      this.erisDivide()
+      this.erisMath()
       this.userData.erisYears = this.planetYears
     }
   }
