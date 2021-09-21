@@ -95,6 +95,10 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.mars
     let divide = number1 / number2
+    let lifeDayMultiplier = this.averageLife * this.solarSystem.earth
+    let planetLifeExpectancy = lifeDayMultiplier / this.solarSystem.mars
+    let lifeSubtract = planetLifeExpectancy - divide
+    this.userData.marsLifeExpect = lifeSubtract.toFixed(4)
     let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
@@ -103,6 +107,10 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.jupiter
     let divide = number1 / number2
+    let lifeDayMultiplier = this.averageLife * this.solarSystem.earth
+    let planetLifeExpectancy = lifeDayMultiplier / this.solarSystem.jupiter
+    let lifeSubtract = planetLifeExpectancy - divide
+    this.userData.jupiterLifeExpect = lifeSubtract.toFixed(4)
     let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
@@ -111,6 +119,10 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.saturn
     let divide = number1 / number2
+    let lifeDayMultiplier = this.averageLife * this.solarSystem.earth
+    let planetLifeExpectancy = lifeDayMultiplier / this.solarSystem.saturn
+    let lifeSubtract = planetLifeExpectancy - divide
+    this.userData.saturnLifeExpect = lifeSubtract.toFixed(4)
     let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
@@ -119,6 +131,10 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.uranus
     let divide = number1 / number2
+    let lifeDayMultiplier = this.averageLife * this.solarSystem.earth
+    let planetLifeExpectancy = lifeDayMultiplier / this.solarSystem.uranus
+    let lifeSubtract = planetLifeExpectancy - divide
+    this.userData.uranusLifeExpect = lifeSubtract.toFixed(4)
     let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
@@ -127,6 +143,10 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.neptune
     let divide = number1 / number2
+    let lifeDayMultiplier = this.averageLife * this.solarSystem.earth
+    let planetLifeExpectancy = lifeDayMultiplier / this.solarSystem.neptune
+    let lifeSubtract = planetLifeExpectancy - divide
+    this.userData.neptuneLifeExpect = lifeSubtract.toFixed(4)
     let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
@@ -135,6 +155,10 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.pluto
     let divide = number1 / number2
+    let lifeDayMultiplier = this.averageLife * this.solarSystem.earth
+    let planetLifeExpectancy = lifeDayMultiplier / this.solarSystem.pluto
+    let lifeSubtract = planetLifeExpectancy - divide
+    this.userData.plutoLifeExpect = lifeSubtract.toFixed(4)
     let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
@@ -143,6 +167,10 @@ export default class MainControl {
     let number1 = this.userData.userAgeDays
     let number2 = this.solarSystem.eris
     let divide = number1 / number2
+    let lifeDayMultiplier = this.averageLife * this.solarSystem.earth
+    let planetLifeExpectancy = lifeDayMultiplier / this.solarSystem.eris
+    let lifeSubtract = planetLifeExpectancy - divide
+    this.userData.erisLifeExpect = lifeSubtract.toFixed(4)
     let decimal = divide.toFixed(4)
     this.planetYears = decimal
   }
