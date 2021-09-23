@@ -2,6 +2,44 @@ body {
   background-color: lightblue;
 }
 
-#userTextArea {
+#mercuryInfo {
   display: none;
 }
+
+#venusInfo {
+  display: none;
+}
+
+#earthInfo {
+  display: none;
+}
+
+#marsInfo {
+  display: none;
+}
+
+#jupiterInfo {
+  display: none;
+}
+
+#saturnInfo {
+  display: none;
+}
+
+#uranusInfo {
+  display: none;
+}
+
+#neptuneInfo {
+  display: none;
+}
+
+#plutoInfo {
+  display: none;
+}
+
+#erisInfo {
+  display: none;
+}
+
+
