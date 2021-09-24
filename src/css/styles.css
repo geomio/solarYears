@@ -4,42 +4,62 @@ body {
 
 #mercuryInfo {
   display: none;
+  background-image: none;
+  background-color: red;
 }
 
 #venusInfo {
   display: none;
+  background-image: none;
+  background-color: rgb(255, 81, 0);
 }
 
 #earthInfo {
   display: none;
+  background-image: none;
+  background-color: rgb(255, 196, 0);
 }
 
 #marsInfo {
   display: none;
+  background-image: none;
+  background-color: rgb(255, 251, 0);
 }
 
 #jupiterInfo {
   display: none;
+  background-image: none;
+  background-color: rgb(102, 255, 0);
 }
 
 #saturnInfo {
   display: none;
+  background-image: none;
+  background-color: rgb(0, 255, 136);
 }
 
 #uranusInfo {
   display: none;
+  background-image: none;
+  background-color: rgb(0, 255, 213);
 }
 
 #neptuneInfo {
   display: none;
+  background-image: none;
+  background-color: rgb(0, 217, 255);
 }
 
 #plutoInfo {
   display: none;
+  background-image: none;
+  background-color: rgb(0, 140, 255);
 }
 
 #erisInfo {
   display: none;
+  background-image: none;
+  background-color: rgb(0, 47, 255);
 }
 
 

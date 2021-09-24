@@ -1,5 +1,5 @@
 export default class MainControl {
-  constructor(name) {
+  constructor(userAgeYears, selector) {
 
     this.solarSystem = {
       mercury: 87.965,
@@ -15,8 +15,6 @@ export default class MainControl {
     }
 
     this.userData = {
-      userName: name,
-      userAgeYears: 0,
       userAgeDays: 0,
       mercuryYears: 0,
       mercuryLifeExpect: 0,
@@ -40,7 +38,9 @@ export default class MainControl {
 
     this.planetYears = 0
 
-    this.selector = 0
+    this.userAgeYears = userAgeYears
+
+    this.selector = selector
 
     this.averageLife = 90
 
@@ -174,37 +174,37 @@ export default class MainControl {
   }
 
   runSelected() {
-    if (this.selector = 1) {
+    if (this.selector === 1) {
       this.mercuryMath()
       this.userData.mercuryYears = this.planetYears
-    } if (this.selector = 2) {
+    } if (this.selector === 2) {
       this.venusMath()
       this.userData.venusYears = this.planetYears
-    } if (this.selector = 3) {
+    } if (this.selector === 3) {
       this.earthMath()
       this.userData.earthYears = this.planetYears
-    } if (this.selector = 4) {
+    } if (this.selector === 4) {
       this.marsMath()
       this.userData.marsYears = this.planetYears
-    } if (this.selector = 5) {
+    } if (this.selector === 5) {
       this.jupiterMath()
       this.userData.jupiterYears = this.planetYears
-    } if (this.selector = 6) {
+    } if (this.selector === 6) {
       this.saturnMath()
       this.userData.saturnYears = this.planetYears
-    } if (this.selector = 7) {
+    } if (this.selector === 7) {
       this.uranusMath()
       this.userData.uranusYears = this.planetYears
-    } if (this.selector = 8) {
+    } if (this.selector === 8) {
       this.neptuneMath()
       this.userData.neptuneYears = this.planetYears
-    } if (this.selector = 9) {
+    } if (this.selector === 9) {
       this.plutoMath()
       this.userData.plutoYears = this.planetYears
-    } if (this.selector = 10) {
+    } if (this.selector === 10) {
       this.erisMath()
       this.userData.erisYears = this.planetYears
-    } if (this.selector = 11) {
+    } if (this.selector === 11) {
       this.mercuryMath()
       this.userData.mercuryYears = this.planetYears
       this.venusMath()
