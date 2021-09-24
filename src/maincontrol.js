@@ -47,7 +47,7 @@ export default class MainControl {
   };
 
   ageToDays() {
-    let number1 = this.userData.userAgeYears
+    let number1 = this.userAgeYears
     let number2 = this.solarSystem.earth
     let convert = number1 * number2
     this.userData.userAgeDays = convert
