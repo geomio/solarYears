@@ -22,6 +22,8 @@ export default class MainControl {
       venusLifeExpect: 0,
       earthYears: 0,
       earthLifeExpect: 0,
+      marsYears: 0,
+      marsLifeExpect: 0,
       jupiterYears: 0,
       jupiterLifeExpect: 0,
       saturnYears: 0,
