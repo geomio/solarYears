@@ -8,7 +8,7 @@
 <body>
   <div class="container">
     <div class="row" id="header">
-      <h1>Welcome to the cosmic year calculator.</h1>
+      <h1 id="head">Welcome to the cosmic year calculator.</h1>
     </div>
     <div class="row" id="howTo">
       <div class="well" id="instructionWell">
@@ -19,41 +19,42 @@
           <li>users will also be shown planets remaining life expectancy</li>
           <li>life expectancy is based on 90 years, this result is just a fun calculation and not intended to be real or
             accurate</li>
+          <li>Clicking calculate again after results are shown to reset</li>
         </ul>
       </div>
     </div>
     <div class="row" id="userForm">
       <div class="form-group">
-        <label for="age">Age:</label>
+        <label for="age" class="labelStyle">Age:</label>
         <input type="number" id="age" name="quantity" min="1" max="130">
         <div class="form-check form-check-inline" id="userInputAreas">
-          <input type="radio" class="select" id="mecury" name="mainUserInputs" value=1>
-          <label for="mecury">Mercury</label>
-          <input type="radio" class="select" id="venus" name="mainUserInputs" value=2>
-          <label for="venus">Venus</label>
-          <input type="radio" class="select" id="earth" name="mainUserInputs" value=3>
-          <label for="mars">Earth</label>
-          <input type="radio" class="select" id="mars" name="mainUserInputs" value=4>
-          <label for="mars">Mars</label>
-          <input type="radio" class="select" id="jupiter" name="mainUserInputs" value=5>
-          <label for="mars">Jupiter</label>
-          <input type="radio" class="select" id="saturn" name="mainUserInputs" value=6>
-          <label for="mars">Saturn</label>
-          <input type="radio" class="select" id="uranus" name="mainUserInputs" value=7>
-          <label for="mars">Uranus</label>
-          <input type="radio" class="select" id="neptune" name="mainUserInputs" value=8>
-          <label for="mars">Neptune</label>
-          <input type="radio" class="select" id="pluto" name="mainUserInputs" value=9>
-          <label for="mars">Pluto</label>
-          <input type="radio" class="select" id="eris" name="mainUserInputs" value=10>
-          <label for="mars">Eris</label>
-          <input type="radio" class="select" id="all" name="mainUserInputs" value=11>
-          <label for="mars">Run All</label>
+          <input type="radio" id="mecury" name="mainUserInputs" value=1>
+          <label for="mecury" class="labelStyle">Mercury</label>
+          <input type="radio" id="venus" name="mainUserInputs" value=2>
+          <label for="venus" class="labelStyle">Venus</label>
+          <input type="radio" id="earth" name="mainUserInputs" value=3>
+          <label for="earth" class="labelStyle">Earth</label>
+          <input type="radio" id="mars" name="mainUserInputs" value=4>
+          <label for="mars" class="labelStyle">Mars</label>
+          <input type="radio" id="jupiter" name="mainUserInputs" value=5>
+          <label for="jupiter" class="labelStyle">Jupiter</label>
+          <input type="radio" id="saturn" name="mainUserInputs" value=6>
+          <label for="saturn" class="labelStyle">Saturn</label>
+          <input type="radio" id="uranus" name="mainUserInputs" value=7>
+          <label for="uranus" class="labelStyle">Uranus</label>
+          <input type="radio" id="neptune" name="mainUserInputs" value=8>
+          <label for="neptune" class="labelStyle">Neptune</label>
+          <input type="radio" id="pluto" name="mainUserInputs" value=9>
+          <label for="pluto" class="labelStyle">Pluto</label>
+          <input type="radio" id="eris" name="mainUserInputs" value=10>
+          <label for="eris" class="labelStyle">Eris</label>
+          <input type="radio" id="all" name="mainUserInputs" value=11>
+          <label for="mars" class="labelStyle">Run All</label>
         </div>
         <button type="submit" class="btn btn-primary" id="submitUserData">Calculate</button>
       </div>
 
-      <div class="row" id="mercuryInfo" class="mainHide">
+      <div class="row" id="mercuryInfo">
         <div class="panel" id="mercuryCard">
           <h2>Mercury years to Earth Converter</h2>
           <ul>
@@ -93,7 +94,7 @@
           </ul>
         </div>
       </div>
-      <div class="row" id="jupiterInfo" class="mainHide">
+      <div class="row" id="jupiterInfo">
         <div class="panel" id="jupiterCard">
           <h2>Jupiter years to Earth Converter</h2>
           <ul>
@@ -103,7 +104,7 @@
           </ul>
         </div>
       </div>
-      <div class="row" id="saturnInfo" class="mainHide">
+      <div class="row" id="saturnInfo">
         <div class="panel" id="saturnCard">
           <h2>Saturn years to Earth Converter</h2>
           <ul>
@@ -113,7 +114,7 @@
           </ul>
         </div>
       </div>
-      <div class="row" id="uranusInfo" class="mainHide">
+      <div class="row" id="uranusInfo">
         <div class="panel" id="uranusCard">
           <h2>Uranus years to Earth Converter</h2>
           <ul>
@@ -123,7 +124,7 @@
           </ul>
         </div>
       </div>
-      <div class="row" id="neptuneInfo" class="mainHide">
+      <div class="row" id="neptuneInfo">
         <div class="panel" id="neptuneCard">
           <h2>Neptune years to Earth Converter</h2>
           <ul>
@@ -133,7 +134,7 @@
           </ul>
         </div>
       </div>
-      <div class="row" id="plutoInfo" class="mainHide">
+      <div class="row" id="plutoInfo">
         <div class="panel" id="plutoCard">
           <h2>Pluto years to Earth Converter</h2>
           <ul>
@@ -143,7 +144,7 @@
           </ul>
         </div>
       </div>
-      <div class="row" id="erisInfo" class="mainHide">
+      <div class="row" id="erisInfo">
         <div class="panel" id="erisCard">
           <h2>Eris years to Earth Converter</h2>
           <ul>
