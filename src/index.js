@@ -8,7 +8,7 @@ import MainControl from './maincontrol.js';
 
 $(document).ready(function () {
   let clickedButton = true
-  $('#submitUserData').click(function (event) {
+  $('#mainForm').submit(function (event) {
     if (clickedButton === true) {
       clickedButton = false
       const userAge = $('#age').val();

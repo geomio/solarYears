@@ -17,7 +17,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'solar year',
       template: './src/index.html',
       inject: 'body'
     })
@@ -26,7 +26,7 @@ module.exports = {
     rules: [
 
       {
-        test: /\.(gif|png|jpe?g)$/,
+        test: /\.(gif|png|jpg|jpe?g)$/,
         use: [
           {
             loader: 'file-loader',
@@ -35,6 +35,7 @@ module.exports = {
               outputPath: 'assets/images/'
             }
           }
+
         ]
       },
 

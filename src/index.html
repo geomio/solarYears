@@ -24,35 +24,39 @@
       </div>
     </div>
     <div class="row" id="userForm">
-      <div class="form-group">
-        <label for="age" class="labelStyle">Age:</label>
-        <input type="number" id="age" name="quantity" min="1" max="130">
-        <div class="form-check form-check-inline" id="userInputAreas">
-          <input type="radio" id="mecury" name="mainUserInputs" value=1>
-          <label for="mecury" class="labelStyle">Mercury</label>
-          <input type="radio" id="venus" name="mainUserInputs" value=2>
-          <label for="venus" class="labelStyle">Venus</label>
-          <input type="radio" id="earth" name="mainUserInputs" value=3>
-          <label for="earth" class="labelStyle">Earth</label>
-          <input type="radio" id="mars" name="mainUserInputs" value=4>
-          <label for="mars" class="labelStyle">Mars</label>
-          <input type="radio" id="jupiter" name="mainUserInputs" value=5>
-          <label for="jupiter" class="labelStyle">Jupiter</label>
-          <input type="radio" id="saturn" name="mainUserInputs" value=6>
-          <label for="saturn" class="labelStyle">Saturn</label>
-          <input type="radio" id="uranus" name="mainUserInputs" value=7>
-          <label for="uranus" class="labelStyle">Uranus</label>
-          <input type="radio" id="neptune" name="mainUserInputs" value=8>
-          <label for="neptune" class="labelStyle">Neptune</label>
-          <input type="radio" id="pluto" name="mainUserInputs" value=9>
-          <label for="pluto" class="labelStyle">Pluto</label>
-          <input type="radio" id="eris" name="mainUserInputs" value=10>
-          <label for="eris" class="labelStyle">Eris</label>
-          <input type="radio" id="all" name="mainUserInputs" value=11>
-          <label for="mars" class="labelStyle">Run All</label>
+      <form id="mainForm">
+        <div class="form-group">
+          <label for="age" class="labelStyle">Age:</label>
+          <input type="number" id="age" name="quantity" min="1" max="130" required>
+          <div class="form-check form-check-inline" id="userInputAreas">
+            <input type="radio" id="mecury" name="mainUserInputs" value=1>
+            <label for="mecury" class="labelStyle">Mercury</label>
+            <input type="radio" id="venus" name="mainUserInputs" value=2>
+            <label for="venus" class="labelStyle">Venus</label>
+            <input type="radio" id="earth" name="mainUserInputs" value=3>
+            <label for="earth" class="labelStyle">Earth</label>
+            <input type="radio" id="mars" name="mainUserInputs" value=4>
+            <label for="mars" class="labelStyle">Mars</label>
+            <input type="radio" id="jupiter" name="mainUserInputs" value=5>
+            <label for="jupiter" class="labelStyle">Jupiter</label>
+            <input type="radio" id="saturn" name="mainUserInputs" value=6>
+            <label for="saturn" class="labelStyle">Saturn</label>
+            <input type="radio" id="uranus" name="mainUserInputs" value=7>
+            <label for="uranus" class="labelStyle">Uranus</label>
+            <input type="radio" id="neptune" name="mainUserInputs" value=8>
+            <label for="neptune" class="labelStyle">Neptune</label>
+            <input type="radio" id="pluto" name="mainUserInputs" value=9>
+            <label for="pluto" class="labelStyle">Pluto</label>
+            <input type="radio" id="eris" name="mainUserInputs" value=10>
+            <label for="eris" class="labelStyle">Eris</label>
+            <input type="radio" id="all" name="mainUserInputs" value=11>
+            <label for="mars" class="labelStyle">Run All</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Calculate</button>
         </div>
-        <button type="submit" class="btn btn-primary" id="submitUserData">Calculate</button>
-      </div>
+
+      </form>
+
 
       <div class="row" id="mercuryInfo">
         <div class="panel" id="mercuryCard">
@@ -62,6 +66,7 @@
             <li id="ConvertedAge1">Your converted age is: <span id="convertAgePrint1"></span></li>
             <li id="remaningLife1">Your remaining expectancy is: <span id="lifePrint1"></span></li>
           </ul>
+          <img src="assets/images/mercury-100.jpg" alt="mercury vector art" class="imageStyle">
         </div>
       </div>
       <div class="row" id="venusInfo" class="mainHide">
@@ -72,6 +77,7 @@
             <li id="ConvertedAge2">Your converted age is: <span id="convertAgePrint2"></span></li>
             <li id="remaningLife2">Your remaining expectancy is: <span id="lifePrint2"></span></li>
           </ul>
+          <img src="assets/images/venus-100.jpg" alt="venus vector art" class="imageStyle">
         </div>
       </div>
       <div class="row" id="earthInfo" class="mainHide">
@@ -82,6 +88,7 @@
             <li id="ConvertedAge3">Your converted age is: <span id="convertAgePrint3"></span></li>
             <li id="remaningLife3">Your remaining expectancy is: <span id="lifePrint3"></span></li>
           </ul>
+          <img src="assets/images/earth-100.jpg" alt="earth vector art" class="imageStyle">
         </div>
       </div>
       <div class="row" id="marsInfo" class="mainHide">
@@ -92,6 +99,7 @@
             <li id="ConvertedAge4">Your converted age is: <span id="convertAgePrint4"></span></li>
             <li id="remaningLife4">Your remaining expectancy is: <span id="lifePrint4"></span></li>
           </ul>
+          <img src="assets/images/mars-100.jpg" alt="mars vector art" class="imageStyle">
         </div>
       </div>
       <div class="row" id="jupiterInfo">
@@ -102,6 +110,7 @@
             <li id="ConvertedAge5">Your converted age is: <span id="convertAgePrint5"></span></li>
             <li id="remaningLife5">Your remaining expectancy is: <span id="lifePrint5"></span></li>
           </ul>
+          <img src="assets/images/jupiter-100.jpg" alt="jupiter vector art" class="imageStyle">
         </div>
       </div>
       <div class="row" id="saturnInfo">
@@ -112,6 +121,7 @@
             <li id="ConvertedAge6">Your converted age is: <span id="convertAgePrint6"></span></li>
             <li id="remaningLife6">Your remaining expectancy is: <span id="lifePrint6"></span></li>
           </ul>
+          <img src="assets/images/saturn-100.jpg" alt="saturn vector art" class="imageStyle">
         </div>
       </div>
       <div class="row" id="uranusInfo">
@@ -122,6 +132,7 @@
             <li id="ConvertedAge7">Your converted age is: <span id="convertAgePrint7"></span></li>
             <li id="remaningLife7">Your remaining expectancy is: <span id="lifePrint7"></span></li>
           </ul>
+          <img src="assets/images/uranus-100.jpg" alt="uranus vector art" class="imageStyle">
         </div>
       </div>
       <div class="row" id="neptuneInfo">
@@ -132,6 +143,7 @@
             <li id="ConvertedAge8">Your converted age is: <span id="convertAgePrint8"></span></li>
             <li id="remaningLife8">Your remaining expectancy is: <span id="lifePrint8"></span></li>
           </ul>
+          <img src="assets/images/neptune-100.jpg" alt="neptune vector art" class="imageStyle">
         </div>
       </div>
       <div class="row" id="plutoInfo">
@@ -142,6 +154,7 @@
             <li id="ConvertedAge9">Your converted age is: <span id="convertAgePrint9"></span></li>
             <li id="remaningLife9">Your remaining expectancy is: <span id="lifePrint9"></span></li>
           </ul>
+          <img src="assets/images/pluto-100.jpg" alt="pluto vector art" class="imageStyle">
         </div>
       </div>
       <div class="row" id="erisInfo">
@@ -152,6 +165,7 @@
             <li id="ConvertedAge10">Your converted age is: <span id="convertAgePrint10"></span></li>
             <li id="remaningLife10">Your remaining expectancy is: <span id="lifePrint10"></span></li>
           </ul>
+          <img src="assets/images/eris-100.jpg" alt="eris vector art" class="imageStyle">
         </div>
       </div>
       <div class="row" id="resetArea">
