@@ -10,9 +10,9 @@ A basic html page with javascript, webpack and jest testing linked to bootstrap 
   
 # Setup/Installation Requirements
 
-1. copy link https://github.com/geomio/pizzaProject.git
+1. 
 2. in terminal of choice navigate to folder of choice for cloning
-3. type or paste this into the terminal: git clone https://github.com/geomio/pizzaProject.git
+3. type or paste this into the terminal: git clone 
 4. navigate to clone destination folder
 5. open index.html with web browser
 

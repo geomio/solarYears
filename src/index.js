@@ -21,94 +21,235 @@ $(document).ready(function () {
       if (userSelectionNum === 1) {
         $('#mercuryInfo').show();
         $('#printAge1').text(mainControl.userAgeYears);
+
+        parseInt(mainControl.userData.mercuryLifeExpect)
+        if (mainControl.userData.mercuryLifeExpect < 0) {
+          let overLife = mainControl.userData.mercuryLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife1').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint1').text(mainControl.userData.mercuryLifeExpect);
+        }
         $('#convertAgePrint1').text(mainControl.userData.mercuryYears);
-        $('#lifePrint1').text(mainControl.userData.mercuryLifeExpect);
-      } if (userSelectionNum === 2) {
+
+      } else if (userSelectionNum === 2) {
         $('#venusInfo').show();
         $('#printAge2').text(mainControl.userAgeYears);
-        $('#convertAgePrint2').text(mainControl.userData.venusYears);
-        $('#lifePrint2').text(mainControl.userData.venusLifeExpect);
-      } if (userSelectionNum === 3) {
+        parseInt(mainControl.userData.venusLifeExpect)
+        if (mainControl.userData.venusLifeExpect < 0) {
+          let overLife = mainControl.userData.venusLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife2').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint2').text(mainControl.userData.venusLifeExpect);
+        }
+        $('#convertAgePrint3').text(mainControl.userData.venusYears);
+      } else if (userSelectionNum === 3) {
         $('#earthInfo').show();
         $('#printAge3').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.earthLifeExpect)
+        if (mainControl.userData.earthLifeExpect < 0) {
+          let overLife = mainControl.userData.earthLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife3').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint3').text(mainControl.userData.earthLifeExpect);
+        }
         $('#convertAgePrint3').text(mainControl.userData.earthYears);
-        $('#lifePrint3').text(mainControl.userData.earthLifeExpect);
-      } if (userSelectionNum === 4) {
+      } else if (userSelectionNum === 4) {
         $('#marsInfo').show();
         $('#printAge4').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.marsLifeExpect)
+        if (mainControl.userData.marsLifeExpect < 0) {
+          let overLife = mainControl.userData.marsLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife4').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint4').text(mainControl.userData.marsLifeExpect);
+        }
         $('#convertAgePrint4').text(mainControl.userData.marsYears);
-        $('#lifePrint4').text(mainControl.userData.marsLifeExpect);
-      } if (userSelectionNum === 5) {
+      } else if (userSelectionNum === 5) {
         $('#jupiterInfo').show();
         $('#printAge5').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.jupiterLifeExpect)
+        if (mainControl.userData.jupiterLifeExpect < 0) {
+          let overLife = mainControl.userData.jupiterLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife5').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint5').text(mainControl.userData.jupiterLifeExpect);
+        }
         $('#convertAgePrint5').text(mainControl.userData.jupiterYears);
-        $('#lifePrint5').text(mainControl.userData.jupiterLifeExpect);
-      } if (userSelectionNum === 6) {
+      } else if (userSelectionNum === 6) {
         $('#saturnInfo').show();
         $('#printAge6').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.saturnLifeExpect)
+        if (mainControl.userData.saturnLifeExpect < 0) {
+          let overLife = mainControl.userData.saturnLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife6').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint6').text(mainControl.userData.saturnLifeExpect);
+        }
         $('#convertAgePrint6').text(mainControl.userData.saturnYears);
-        $('#lifePrint6').text(mainControl.userData.saturnLifeExpect);
-      } if (userSelectionNum === 7) {
+      } else if (userSelectionNum === 7) {
         $('#uranusInfo').show();
         $('#printAge7').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.uranusLifeExpect)
+        if (mainControl.userData.uranusLifeExpect < 0) {
+          let overLife = mainControl.userData.uranusLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife7').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint7').text(mainControl.userData.uranusLifeExpect);
+        }
         $('#convertAgePrint7').text(mainControl.userData.uranusYears);
-        $('#lifePrint7').text(mainControl.userData.uranusLifeExpect);
-      } if (userSelectionNum === 8) {
+      } else if (userSelectionNum === 8) {
         $('#neptuneInfo').show();
         $('#printAge8').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.neptuneLifeExpect)
+        if (mainControl.userData.neptuneLifeExpect < 0) {
+          let overLife = mainControl.userData.neptuneLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife8').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint8').text(mainControl.userData.neptuneLifeExpect);
+        }
         $('#convertAgePrint8').text(mainControl.userData.neptuneYears);
-        $('#lifePrint8').text(mainControl.userData.neptuneLifeExpect);
-      } if (userSelectionNum === 9) {
+      } else if (userSelectionNum === 9) {
         $('#plutoInfo').show();
         $('#printAge9').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.plutoLifeExpect)
+        if (mainControl.userData.plutoLifeExpect < 0) {
+          let overLife = mainControl.userData.plutoLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife9').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint9').text(mainControl.userData.plutoLifeExpect);
+        }
         $('#convertAgePrint9').text(mainControl.userData.plutoYears);
-        $('#lifePrint9').text(mainControl.userData.plutoLifeExpect);
-      } if (userSelectionNum === 10) {
+      } else if (userSelectionNum === 10) {
         $('#erisInfo').show();
         $('#printAge10').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.erisLifeExpect)
+        if (mainControl.userData.erisLifeExpect < 0) {
+          let overLife = mainControl.userData.erisLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife10').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint10').text(mainControl.userData.erisLifeExpect);
+        }
         $('#convertAgePrint10').text(mainControl.userData.erisYears);
-        $('#lifePrint10').text(mainControl.userData.erisLifeExpect);
-      } if (userSelectionNum === 11) {
+      } else if (userSelectionNum === 11) {
         $('#mercuryInfo').show();
         $('#printAge1').text(mainControl.userAgeYears);
+        if (mainControl.userData.mercuryLifeExpect < 0) {
+          let overLife = mainControl.userData.mercuryLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife1').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint1').text(mainControl.userData.mercuryLifeExpect);
+        }
         $('#convertAgePrint1').text(mainControl.userData.mercuryYears);
-        $('#lifePrint1').text(mainControl.userData.mercuryLifeExpect);
         $('#venusInfo').show();
         $('#printAge2').text(mainControl.userAgeYears);
-        $('#convertAgePrint2').text(mainControl.userData.venusYears);
-        $('#lifePrint2').text(mainControl.userData.venusLifeExpect);
+        parseInt(mainControl.userData.venusLifeExpect)
+        if (mainControl.userData.venusLifeExpect < 0) {
+          let overLife = mainControl.userData.venusLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife2').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint2').text(mainControl.userData.venusLifeExpect);
+        }
+        $('#convertAgePrint3').text(mainControl.userData.venusYears);
         $('#earthInfo').show();
         $('#printAge3').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.earthLifeExpect)
+        if (mainControl.userData.earthLifeExpect < 0) {
+          let overLife = mainControl.userData.earthLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife3').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint3').text(mainControl.userData.earthLifeExpect);
+        }
         $('#convertAgePrint3').text(mainControl.userData.earthYears);
-        $('#lifePrint3').text(mainControl.userData.earthLifeExpect);
         $('#marsInfo').show();
         $('#printAge4').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.marsLifeExpect)
+        if (mainControl.userData.marsLifeExpect < 0) {
+          let overLife = mainControl.userData.marsLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife4').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint4').text(mainControl.userData.marsLifeExpect);
+        }
         $('#convertAgePrint4').text(mainControl.userData.marsYears);
-        $('#lifePrint4').text(mainControl.userData.marsLifeExpect);
         $('#jupiterInfo').show();
         $('#printAge5').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.jupiterLifeExpect)
+        if (mainControl.userData.jupiterLifeExpect < 0) {
+          let overLife = mainControl.userData.jupiterLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife5').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint5').text(mainControl.userData.jupiterLifeExpect);
+        }
         $('#convertAgePrint5').text(mainControl.userData.jupiterYears);
-        $('#lifePrint5').text(mainControl.userData.jupiterLifeExpect);
         $('#saturnInfo').show();
         $('#printAge6').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.saturnLifeExpect)
+        if (mainControl.userData.saturnLifeExpect < 0) {
+          let overLife = mainControl.userData.saturnLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife6').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint6').text(mainControl.userData.saturnLifeExpect);
+        }
         $('#convertAgePrint6').text(mainControl.userData.saturnYears);
-        $('#lifePrint6').text(mainControl.userData.saturnLifeExpect);
         $('#uranusInfo').show();
         $('#printAge7').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.uranusLifeExpect)
+        if (mainControl.userData.uranusLifeExpect < 0) {
+          let overLife = mainControl.userData.uranusLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife7').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint7').text(mainControl.userData.uranusLifeExpect);
+        }
         $('#convertAgePrint7').text(mainControl.userData.uranusYears);
-        $('#lifePrint7').text(mainControl.userData.uranusLifeExpect);
         $('#neptuneInfo').show();
         $('#printAge8').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.neptuneLifeExpect)
+        if (mainControl.userData.neptuneLifeExpect < 0) {
+          let overLife = mainControl.userData.neptuneLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife8').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint8').text(mainControl.userData.neptuneLifeExpect);
+        }
         $('#convertAgePrint8').text(mainControl.userData.neptuneYears);
-        $('#lifePrint8').text(mainControl.userData.neptuneLifeExpect);
         $('#plutoInfo').show();
         $('#printAge9').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.plutoLifeExpect)
+        if (mainControl.userData.plutoLifeExpect < 0) {
+          let overLife = mainControl.userData.plutoLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife9').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint9').text(mainControl.userData.plutoLifeExpect);
+        }
         $('#convertAgePrint9').text(mainControl.userData.plutoYears);
-        $('#lifePrint9').text(mainControl.userData.plutoLifeExpect);
         $('#erisInfo').show();
         $('#printAge10').text(mainControl.userAgeYears);
+        parseInt(mainControl.userData.erisLifeExpect)
+        if (mainControl.userData.erisLifeExpect < 0) {
+          let overLife = mainControl.userData.erisLifeExpect * -1;
+          console.log("you have lived:", overLife, "years past the expectancy's");
+          $('#remaningLife10').html("you have lived : " + overLife + " years past the expectancy's")
+        } else {
+          $('#lifePrint10').text(mainControl.userData.erisLifeExpect);
+        }
         $('#convertAgePrint10').text(mainControl.userData.erisYears);
-        $('#lifePrint10').text(mainControl.userData.erisLifeExpect);
       };
       event.preventDefault();
     } else {
