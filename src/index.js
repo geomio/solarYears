@@ -161,12 +161,12 @@ $(document).ready(function () {
         } else {
           $('#lifePrint2').text(mainControl.userData.venusLifeExpect);
         }
-        $('#convertAgePrint3').text(mainControl.userData.venusYears);
+        $('#convertAgePrint2').text(mainControl.userData.venusYears);
         $('#earthInfo').show();
         $('#printAge3').text(mainControl.userAgeYears);
-        parseInt(mainControl.userData.earthLifeExpect)
-        if (mainControl.userData.earthLifeExpect < 0) {
-          let overLife = mainControl.userData.earthLifeExpect * -1;
+        parseInt(mainControl.userData.venusLifeExpect)
+        if (mainControl.userData.venusLifeExpect < 0) {
+          let overLife = mainControl.userData.venusLifeExpect * -1;
           console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remaningLife3').html("you have lived : " + overLife + " years past the expectancy's")
         } else {
