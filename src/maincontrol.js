@@ -13,7 +13,6 @@ export default class MainControl {
       pluto: 90736,
       eris: 203670
     };
-
     this.userData = {
       userAgeDays: 0,
       mercuryYears: 0,
@@ -37,24 +36,17 @@ export default class MainControl {
       erisYears: 0,
       erisLifeExpect: 0
     };
-
     this.planetYears = 0;
-
     this.userAgeYears = userAgeYears;
-
     this.selector = selector;
-
     this.averageLife = 90;
-
   }
-
   ageToDays() {
     let number1 = this.userAgeYears;
     let number2 = this.solarSystem.earth;
     let convert = number1 * number2;
     this.userData.userAgeDays = convert;
   }
-
   mercuryMath() {
     let number1 = this.userData.userAgeDays;
     let number2 = this.solarSystem.mercury;
@@ -66,7 +58,6 @@ export default class MainControl {
     let decimal = divide.toFixed(4);
     this.planetYears = decimal;
   }
-
   venusMath() {
     let number1 = this.userData.userAgeDays;
     let number2 = this.solarSystem.venus;
@@ -78,7 +69,6 @@ export default class MainControl {
     let decimal = divide.toFixed(4);
     this.planetYears = decimal;
   }
-
   earthMath() {
     let number1 = this.userData.userAgeDays;
     let number2 = this.solarSystem.earth;
@@ -90,7 +80,6 @@ export default class MainControl {
     let decimal = divide.toFixed(4);
     this.planetYears = decimal;
   }
-
   marsMath() {
     let number1 = this.userData.userAgeDays;
     let number2 = this.solarSystem.mars;
@@ -102,7 +91,6 @@ export default class MainControl {
     let decimal = divide.toFixed(4);
     this.planetYears = decimal;
   }
-
   jupiterMath() {
     let number1 = this.userData.userAgeDays;
     let number2 = this.solarSystem.jupiter;
@@ -114,7 +102,6 @@ export default class MainControl {
     let decimal = divide.toFixed(4);
     this.planetYears = decimal;
   }
-
   saturnMath() {
     let number1 = this.userData.userAgeDays;
     let number2 = this.solarSystem.saturn;
@@ -126,7 +113,6 @@ export default class MainControl {
     let decimal = divide.toFixed(4);
     this.planetYears = decimal;
   }
-
   uranusMath() {
     let number1 = this.userData.userAgeDays;
     let number2 = this.solarSystem.uranus;
@@ -138,7 +124,6 @@ export default class MainControl {
     let decimal = divide.toFixed(4);
     this.planetYears = decimal;
   }
-
   neptuneMath() {
     let number1 = this.userData.userAgeDays;
     let number2 = this.solarSystem.neptune;
@@ -150,7 +135,6 @@ export default class MainControl {
     let decimal = divide.toFixed(4);
     this.planetYears = decimal;
   }
-
   plutoMath() {
     let number1 = this.userData.userAgeDays;
     let number2 = this.solarSystem.pluto;
@@ -162,7 +146,6 @@ export default class MainControl {
     let decimal = divide.toFixed(4);
     this.planetYears = decimal;
   }
-
   erisMath() {
     let number1 = this.userData.userAgeDays;
     let number2 = this.solarSystem.eris;
@@ -174,7 +157,6 @@ export default class MainControl {
     let decimal = divide.toFixed(4);
     this.planetYears = decimal;
   }
-
   runSelected() {
     if (this.selector === 1) {
       this.mercuryMath();
@@ -229,8 +211,6 @@ export default class MainControl {
       this.userData.erisYears = this.planetYears;
     }
   }
-
-
 }
 
 

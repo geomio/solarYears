@@ -21,14 +21,12 @@ describe('MainControl', () => {
     expect(system.solarSystem.eris).toEqual(203670);
     expect()
   });
-
   test('ageToDays will convert user age to years', () => {
     const userAge = 25
     const system = new MainControl(userAge);
     system.ageToDays();
     expect(system.userData.userAgeDays).toEqual(9125);
   });
-
   test('mercuryDivide will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for mercury', () => {
     const userAge = 25
     const system = new MainControl(userAge);
@@ -37,7 +35,6 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("103.7344");
     expect(system.userData.mercuryLifeExpect).toEqual("269.7095")
   });
-
   test('venusMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for venus', () => {
     const userAge = 25
     const system = new MainControl(userAge);
@@ -46,7 +43,6 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("40.6504");
     expect(system.userData.venusLifeExpect).toEqual("105.6911")
   });
-
   test('earthMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for earth', () => {
     const userAge = 25
     const system = new MainControl(userAge);
@@ -54,9 +50,7 @@ describe('MainControl', () => {
     system.earthMath();
     expect(system.planetYears).toEqual("25.0000");
     expect(system.userData.earthLifeExpect).toEqual("65.0000")
-
   });
-
   test('marsMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for mars', () => {
     const userAge = 25
     const system = new MainControl(userAge);
@@ -65,7 +59,6 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("13.2908");
     expect(system.userData.marsLifeExpect).toEqual("34.5561")
   });
-
   test('jupiterMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for jupiter', () => {
     const userAge = 25
     const system = new MainControl(userAge);
@@ -74,7 +67,6 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("2.1079");
     expect(system.userData.jupiterLifeExpect).toEqual("5.4806")
   });
-
   test('saturnMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for saturn', () => {
     const userAge = 25
     const system = new MainControl(userAge);
@@ -83,7 +75,6 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("0.8486");
     expect(system.userData.saturnLifeExpect).toEqual("2.2064")
   });
-
   test('uranusMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for uranus', () => {
     const userAge = 25
     const system = new MainControl(userAge);
@@ -92,7 +83,6 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("0.2976");
     expect(system.userData.uranusLifeExpect).toEqual("0.7737")
   });
-
   test('neptuneMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for neptune', () => {
     const userAge = 25
     const system = new MainControl(userAge);
@@ -101,7 +91,6 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("0.1517");
     expect(system.userData.neptuneLifeExpect).toEqual("0.3944")
   });
-
   test('plutoMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for pluto', () => {
     const userAge = 25
     const system = new MainControl(userAge);
@@ -110,7 +99,6 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("0.1006");
     expect(system.userData.plutoLifeExpect).toEqual("0.2615")
   });
-
   test('erisMath will divide userAgeDays to store the result in planetYears and also calculate life expectancy remaining for eris', () => {
     const userAge = 25
     const system = new MainControl(userAge);
@@ -119,7 +107,6 @@ describe('MainControl', () => {
     expect(system.planetYears).toEqual("0.0448");
     expect(system.userData.erisLifeExpect).toEqual("0.1165")
   });
-
   test('runSelected will run selected Math function and run all at once', () => {
     const userAge = 25;
     let select = 1;
@@ -166,7 +153,6 @@ describe('MainControl', () => {
     expect(system.userData.erisYears).toEqual("0.0448");
     expect(system.userData.erisLifeExpect).toEqual("0.1165")
   });
-
   test('runSelected can run all Math functions at once', () => {
     const userAge = 25;
     let select = 11;

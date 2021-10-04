@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import MainControl from './maincontrol.js';
 
-
-
 $(document).ready(function () {
   let clickedButton = true;
   $('#mainForm').submit(function (event) {
@@ -21,7 +19,6 @@ $(document).ready(function () {
       if (userSelectionNum === 1) {
         $('#mercuryInfo').show();
         $('#printAge1').text(mainControl.userAgeYears);
-
         parseInt(mainControl.userData.mercuryLifeExpect);
         if (mainControl.userData.mercuryLifeExpect < 0) {
           let overLife = mainControl.userData.mercuryLifeExpect * -1;
@@ -31,7 +28,6 @@ $(document).ready(function () {
           $('#lifePrint1').text(mainControl.userData.mercuryLifeExpect);
         }
         $('#convertAgePrint1').text(mainControl.userData.mercuryYears);
-
       } else if (userSelectionNum === 2) {
         $('#venusInfo').show();
         $('#printAge2').text(mainControl.userAgeYears);
