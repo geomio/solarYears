@@ -6,7 +6,7 @@
 
 ## Description
 
-A basic html page with javascript, webpack and jest testing linked to bootstrap and jquery that will let user fill out form field to select a planet and enter their age to convert their earth age into select planet age. It will show user selected planet or it will run all, the program will also show how long user has left or how long the lived past avg life expectancy.
+A basic html page with javascript, webpack and jest testing linked to bootstrap and jquery that will let user fill out form field to select a planet and enter their age to convert their earth age into select planet age. It will show user selected planet or it will run all, the program will also show how long user has left or how long the lived past avg life expectancy. Art border colors for display area arrange from hot/red being closer to the sun to cool/blue colors being further.
   
 # Setup/Installation Requirements
 
