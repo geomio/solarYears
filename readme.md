@@ -14,8 +14,9 @@ A basic html page with javascript, webpack and jest testing linked to bootstrap 
 2. In terminal of choice navigate to folder of choice for cloning.
 3. Type or paste this into the terminal: git clone https://github.com/geomio/solarYears.git
 4. Navigate to clone destination folder using terminal.
-5. To start program In project root folder, using terminal type and enter: npm run start.
-6. Browser window with project should open.
+5. In the terminal type npm install and hit enter, wait for npm to finish installation
+6. To start program In project root folder, using terminal type and enter: npm run start.
+7. Browser window with project should open.
 
 ## instructions
 

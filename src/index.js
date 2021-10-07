@@ -22,7 +22,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.mercuryLifeExpect);
         if (mainControl.userData.mercuryLifeExpect < 0) {
           let overLife = mainControl.userData.mercuryLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife1').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint1').text(mainControl.userData.mercuryLifeExpect);
@@ -34,7 +33,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.venusLifeExpect);
         if (mainControl.userData.venusLifeExpect < 0) {
           let overLife = mainControl.userData.venusLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife2').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint2').text(mainControl.userData.venusLifeExpect);
@@ -46,7 +44,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.earthLifeExpect);
         if (mainControl.userData.earthLifeExpect < 0) {
           let overLife = mainControl.userData.earthLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife3').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint3').text(mainControl.userData.earthLifeExpect);
@@ -58,7 +55,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.marsLifeExpect);
         if (mainControl.userData.marsLifeExpect < 0) {
           let overLife = mainControl.userData.marsLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife4').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint4').text(mainControl.userData.marsLifeExpect);
@@ -70,7 +66,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.jupiterLifeExpect);
         if (mainControl.userData.jupiterLifeExpect < 0) {
           let overLife = mainControl.userData.jupiterLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife5').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint5').text(mainControl.userData.jupiterLifeExpect);
@@ -82,7 +77,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.saturnLifeExpect);
         if (mainControl.userData.saturnLifeExpect < 0) {
           let overLife = mainControl.userData.saturnLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife6').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint6').text(mainControl.userData.saturnLifeExpect);
@@ -94,7 +88,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.uranusLifeExpect);
         if (mainControl.userData.uranusLifeExpect < 0) {
           let overLife = mainControl.userData.uranusLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife7').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint7').text(mainControl.userData.uranusLifeExpect);
@@ -106,7 +99,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.neptuneLifeExpect);
         if (mainControl.userData.neptuneLifeExpect < 0) {
           let overLife = mainControl.userData.neptuneLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife8').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint8').text(mainControl.userData.neptuneLifeExpect);
@@ -118,7 +110,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.plutoLifeExpect);
         if (mainControl.userData.plutoLifeExpect < 0) {
           let overLife = mainControl.userData.plutoLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife9').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint9').text(mainControl.userData.plutoLifeExpect);
@@ -130,7 +121,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.erisLifeExpect);
         if (mainControl.userData.erisLifeExpect < 0) {
           let overLife = mainControl.userData.erisLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife10').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint10').text(mainControl.userData.erisLifeExpect);
@@ -141,7 +131,6 @@ $(document).ready(function () {
         $('#printAge1').text(mainControl.userAgeYears);
         if (mainControl.userData.mercuryLifeExpect < 0) {
           let overLife = mainControl.userData.mercuryLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife1').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint1').text(mainControl.userData.mercuryLifeExpect);
@@ -152,7 +141,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.venusLifeExpect);
         if (mainControl.userData.venusLifeExpect < 0) {
           let overLife = mainControl.userData.venusLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife2').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint2').text(mainControl.userData.venusLifeExpect);
@@ -160,10 +148,9 @@ $(document).ready(function () {
         $('#convertAgePrint2').text(mainControl.userData.venusYears);
         $('#earthInfo').show();
         $('#printAge3').text(mainControl.userAgeYears);
-        parseInt(mainControl.userData.venusLifeExpect);
+        parseInt(mainControl.userData.earthLifeExpect);
         if (mainControl.userData.venusLifeExpect < 0) {
-          let overLife = mainControl.userData.venusLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
+          let overLife = mainControl.userData.earthLifeExpect * -1;
           $('#remainingLife3').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint3').text(mainControl.userData.earthLifeExpect);
@@ -174,7 +161,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.marsLifeExpect);
         if (mainControl.userData.marsLifeExpect < 0) {
           let overLife = mainControl.userData.marsLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife4').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint4').text(mainControl.userData.marsLifeExpect);
@@ -185,7 +171,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.jupiterLifeExpect);
         if (mainControl.userData.jupiterLifeExpect < 0) {
           let overLife = mainControl.userData.jupiterLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife5').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint5').text(mainControl.userData.jupiterLifeExpect);
@@ -196,7 +181,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.saturnLifeExpect);
         if (mainControl.userData.saturnLifeExpect < 0) {
           let overLife = mainControl.userData.saturnLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife6').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint6').text(mainControl.userData.saturnLifeExpect);
@@ -207,7 +191,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.uranusLifeExpect);
         if (mainControl.userData.uranusLifeExpect < 0) {
           let overLife = mainControl.userData.uranusLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife7').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint7').text(mainControl.userData.uranusLifeExpect);
@@ -218,7 +201,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.neptuneLifeExpect);
         if (mainControl.userData.neptuneLifeExpect < 0) {
           let overLife = mainControl.userData.neptuneLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife8').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint8').text(mainControl.userData.neptuneLifeExpect);
@@ -229,7 +211,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.plutoLifeExpect);
         if (mainControl.userData.plutoLifeExpect < 0) {
           let overLife = mainControl.userData.plutoLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife9').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint9').text(mainControl.userData.plutoLifeExpect);
@@ -240,7 +221,6 @@ $(document).ready(function () {
         parseInt(mainControl.userData.erisLifeExpect);
         if (mainControl.userData.erisLifeExpect < 0) {
           let overLife = mainControl.userData.erisLifeExpect * -1;
-          console.log("you have lived:", overLife, "years past the expectancy's");
           $('#remainingLife10').html("you have lived : " + overLife + " years past the expectancy's");
         } else {
           $('#lifePrint10').text(mainControl.userData.erisLifeExpect);
